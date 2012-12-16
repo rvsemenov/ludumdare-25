@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="isometric" width="30" height="30" tilewidth="80" tileheight="40">
+ <tileset firstgid="1" name="ground" tilewidth="80" tileheight="40">
+  <image source="ground.png" width="512" height="256"/>
+  <tile id="3">
+   <properties>
+    <property name="blocks_movement" value="1"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="37" name="object" tilewidth="80" tileheight="100">
+  <image source="object.png" width="512" height="256"/>
+ </tileset>
+ <layer name="Ground" width="30" height="30">
+  <properties>
+   <property name="cc_vertexz" value="-1000"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzl18EOgCAIBmDA93/nLh0cAwf0o7UOrEvjUwFXg4iGEaKCwWGZ2kWblqv3ecrtMPnOPdSz22Syz/VPbqfluYg8u9aNXn/FnWfxy24kD7o/M3nQ5k63+x4R5axcpL26Jzvtiovunbe4uu5IP7sfpJv9vkHYUrBXNUG4no/ouayL6nkJ2l5fV3qTKfaPYtUwc/4RV4J+Zj6j+53j6dx471/RzATi
+  </data>
+ </layer>
+ <layer name="FrontPlayer" width="30" height="30">
+  <properties>
+   <property name="cc_vertexz" value="automatic"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFyEANh7g6XV2BAGpImN72DpSfBzKsRwFtwHALW1UoJheQGh6qaDQ1AS3MHIz2DpQ/BwMA+R1XuUqNvKnKQHmeQAekuAtbHUnr+FZnoI2/iQXIcUrNOnOol9WD0f0DlUZGAW0BMWltoNrvanj4uAAA0JIGyg==
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="30" height="30">
+  <object name="SpawnPlayer" gid="8" x="960" y="880"/>
+  <object name="Enemy" gid="9" x="760" y="920">
+   <properties>
+    <property name="Enemy" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="Meta" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzbENAAAIw7AO/f9mvgAGR8rsJunR23G5XC6Xy+VyuVzuV/fiAdDkAdE=
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="isometric" width="60" height="60" tilewidth="40" tileheight="20">
+ <tileset firstgid="1" name="ground" tilewidth="40" tileheight="20">
+  <image source="ground.png" width="512" height="256"/>
+ </tileset>
+ <tileset firstgid="145" name="object" tilewidth="40" tileheight="50">
+  <image source="object.png" width="512" height="256"/>
+ </tileset>
+ <layer name="Ground" width="60" height="60">
+  <properties>
+   <property name="cc_vertexz" value="-1000"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzl2sGOwyAMBFDa/P8/9xQpcgyxzRgP6QFtpQbix7glK/VorR3K+IrxGYzzfTl3NKdqaFbpfVrjet0h9oBtZHi9/VHtjdR6XhvdMxavtTevc5gzllZZu6Ve7dpdvF7rp917gTnjkdH7naX1NZsXYfV4dzBH12D0ovLV1op+11eZvfVZ8602a0ZEvqd5Zs2qnGe8R7vvZbV15J3taebny+yM2by9mr3zr+v8g/cpXyYz4vzQMmb3ytdv96LqQpzt2d7M/WPzZvfLP3h77uradsmYfb8yeprZKzNB5PMVfxkH0otcJztjtJfVnPEdzexFZoz+bGR6EXXu4pUZM/SKdW8rs1n1vIY691DPWCvOYXmP2f+RV3mre2l1P0fvx/Dsr907K2MGb89svb7SHB0zXm+9Wi9VnPue+mcy6s2tetaJ5turXTuDmMyz+Vr2gtE8m+8uZss9V3hXmGVfIr2eedbPVUUPjOrV+iVirx6eOuVr7X3LvlUO1O/rrObqYfntJNLN5F3lZvOi3UzmkTc7a0bv2/rb4n2T2eq1uj333sG7uznizTIze5/M3jpWmX8J5RJm
+  </data>
+ </layer>
+ <layer name="FrontPlayer" width="60" height="60">
+  <properties>
+   <property name="cc_vertexz" value="automatic"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzlWkmOxCAM5P+3JB8e5RAJWTZ4KzDTdQmtdkx5wSyhNSwesP4qOMFOLUeNnCRzgh9ezHgi7eB0X137Ft4byZzidwlX0/lgNyy8HqO8t5/dWJF7X26cnucvLvLkELVzpFvCzpx7+XptprUjE8jxezUfdyofsR0Z86fljdeRjSfVSi+0Mf7k0D7xxvVu+rERRd+Phy+qpnj7s/CpPE+i/Gq1eVXd0Mz3mv9HmNmyOpc18Pp/FOeddmb1/ZBnNirXBhQeoY2AJ681/DT5hbAts05m8evHyEjn9192ra9QTzm7V4/tkV931JlZnCvtFXacQf5C7V9tI1cLkBxuoW19tzJO4WkFKi8kf2X7McK/Yu15OfX7s+hZ3C9A8pMlvjNZmrff70gOaWJ1k2cUWTmv5WM9G+b0XkIbiV31PjL2s6C13bKH5XTSs9cdceZgjT3H1ZM/UZul9zku1jrg5YYcR1pOntxEICOnPTp2jCVLLnr0zOQ171GZiuvBE4EaT3S+0O47V+x9K+1rkJB87q0x6PWzJO+5rxaN8ayPnl/0LA61fsxco2Txo3qyzqB6H3rylNszauOSFd9KdYSrF9EcsMRakvXcC1rp1ywfZdcD9H4NtV6ufKaGiBHSXkmW63fGJXq3MdN3u/ZqGvzXbxFV8Itn6Cuxa02i6Tf7ztTXzrxDNeNI+4jO06u++0d9/+r8A2qKkMI=
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="60" height="60">
+  <object name="SpawnPlayer" gid="8" x="1047" y="1100"/>
+  <object name="Enemy" gid="9" x="784" y="342">
+   <properties>
+    <property name="Enemy" value="1"/>
+   </properties>
+  </object>
+  <object name="Home" gid="10" x="144" y="540">
+   <properties>
+    <property name="Home" value="2"/>
+   </properties>
+  </object>
+  <object name="Home" gid="10" x="1000" y="618">
+   <properties>
+    <property name="Home" value="1"/>
+   </properties>
+  </object>
+  <object name="Enemy" gid="9" x="1001" y="619">
+   <properties>
+    <property name="Enemy" value="1"/>
+   </properties>
+  </object>
+  <object name="Enemy" gid="9" x="145" y="539">
+   <properties>
+    <property name="Enemy" value="1"/>
+   </properties>
+  </object>
+  <object name="Home" gid="10" x="783" y="340">
+   <properties>
+    <property name="Home" value="1"/>
+   </properties>
+  </object>
+  <object name="Home" gid="10" x="480" y="699">
+   <properties>
+    <property name="Home" value="2"/>
+   </properties>
+  </object>
+  <object name="Home" gid="10" x="422" y="361">
+   <properties>
+    <property name="Home" value="3"/>
+   </properties>
+  </object>
+  <object name="Enemy" gid="9" x="478" y="698">
+   <properties>
+    <property name="Enemy" value="1"/>
+   </properties>
+  </object>
+  <object name="Enemy" gid="9" x="422" y="360">
+   <properties>
+    <property name="Enemy" value="1"/>
+   </properties>
+  </object>
+  <object name="Enemy" gid="9" x="475" y="1058">
+   <properties>
+    <property name="Enemy" value="1"/>
+   </properties>
+  </object>
+  <object name="Home" gid="10" x="478" y="1059">
+   <properties>
+    <property name="Home" value="3"/>
+   </properties>
+  </object>
+  <object name="Enemy" gid="9" x="118" y="320">
+   <properties>
+    <property name="Enemy" value="1"/>
+   </properties>
+  </object>
+  <object name="Home" gid="10" x="120" y="321">
+   <properties>
+    <property name="Home" value="2"/>
+   </properties>
+  </object>
+  <object name="Enemy" gid="9" x="281" y="123">
+   <properties>
+    <property name="Enemy" value="1"/>
+   </properties>
+  </object>
+  <object name="Home" gid="10" x="280" y="121">
+   <properties>
+    <property name="Home" value="1"/>
+   </properties>
+  </object>
+  <object name="Home" gid="10" x="1038" y="202">
+   <properties>
+    <property name="Home" value="2"/>
+   </properties>
+  </object>
+  <object name="Enemy" gid="9" x="1039" y="201">
+   <properties>
+    <property name="Enemy" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="Meta" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+</map>
